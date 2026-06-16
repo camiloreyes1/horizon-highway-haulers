@@ -1,0 +1,31 @@
+:root {
+  --ink: #0a0a0b;
+  --ink-2: #0f0f12;
+  --panel: #16161a;
+  --panel-2: #1c1c21;
+  --line: rgba(255,255,255,.08);
+  --line-2: rgba(255,255,255,.14);
+  --orange: #ff7a18;
+  --orange-bright: #ffa02e;
+  --amber: #ffc247;
+  --muted: #8b8b94;
+  --muted-2: #b6b6bf;
+  --text: #f3f3f5;
+  --err: #ff5a5a;
+  --r: 14px;
+  --chrome: linear-gradient(180deg,#ffffff 0%,#e7e8ec 38%,#a9aab3 62%,#d9dade 100%);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; }
+
+body {
+  background:
+    radial-gradient(120% 70% at 50% -10%, rgba(255,122,24,.20), rgba(255,122,24,0) 55%),
+    radial-gradient(90% 50% at 50% 0%, rgba(255,194,71,.10), rgba(0,0,0,0) 60%),
+    var(--ink);
+  color: var(--text);
+  font-family: "Barlow", system-ui, sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
